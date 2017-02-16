@@ -1,7 +1,7 @@
 import React from 'react'
-// removed Link import when refactored to apply link styling inside hoc
-// import { Link } from 'react-router'
+// removed { Link } import when refactored to apply link styling inside hoc
 import NavLink from './NavLink'
+import Home from './Home'
 
 // unlike <a> tag, Link knows if the path it links to is active so it can be styled differently
 export default React.createClass({
@@ -13,7 +13,7 @@ export default React.createClass({
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/repos">Repos</NavLink></li>
         </ul>
-        {this.props.children}
+        {this.props.children || <Home/>}
       </div>
     )
   }
