@@ -1,7 +1,6 @@
 import React from 'react'
 // removed Link import when refactored to apply link styling inside hoc
 // import { Link } from 'react-router'
-
 import NavLink from './NavLink'
 
 // unlike <a> tag, Link knows if the path it links to is active so it can be styled differently
